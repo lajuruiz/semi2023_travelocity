@@ -7,3 +7,4 @@ Característica: vuelos sencillos
     Cuando quiera viajar a "cali"
     Entonces debo obtener al menos una opcion de viaje
 
+  /home/lajuruiz/Documentos/semi20223_travelocity/src/test/resources/features/vuelos/vuelos_sencillos.feature
