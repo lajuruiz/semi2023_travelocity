@@ -1,5 +1,4 @@
 #language:es
-
 Característica: vuelos sencillos
 
   Escenario: vuelo sencillo con opciones por defecto
@@ -7,4 +6,17 @@ Característica: vuelos sencillos
     Cuando quiera viajar a "cali"
     Entonces debo obtener al menos una opcion de viaje
 
-  /home/lajuruiz/Documentos/semi20223_travelocity/src/test/resources/features/vuelos/vuelos_sencillos.feature
+
+  Escenario: vuelo sencillo para dos personas con clase ejecutiva
+    Dado Samuel esta en Pereira
+    Y    necesita un vuelo sencillo para dos personas
+    Cuando quiera viajar a "cartagena" en clase ejecutiva
+    Entonces debo obtener al menos una opcion de viaje
+
+
+  Escenario: vuelo sencillo con hospedaje
+    Dado gloria esta en san andres
+    Y necesita vuelo sencillo con hospedaje
+    Cuando quiera viajar a medellin
+    Entonces debe obtener alguna opcion de viaje
+    Y debe obtener alguna opcion de hospedaje

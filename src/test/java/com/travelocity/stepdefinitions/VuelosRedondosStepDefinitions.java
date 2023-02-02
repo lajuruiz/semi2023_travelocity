@@ -2,19 +2,16 @@ package com.travelocity.stepdefinitions;
 
 import com.travelocity.tasks.SeleccionarDestinoVuelos;
 import com.travelocity.tasks.SeleccionarOrigenVuelos;
+import com.travelocity.tasks.SeleccionarVueloClase;
 import com.travelocity.userinterfaces.VuelosEncontrados;
-import io.cucumber.java.af.En;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
+import io.cucumber.java.es.Y;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.ensure.Ensure;
-import net.serenitybdd.screenplay.waits.WaitUntil;
 
-import java.time.Duration;
-
-import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class VuelosRedondosStepDefinitions {
 
@@ -36,5 +33,21 @@ public class VuelosRedondosStepDefinitions {
         Ensure.that(VuelosEncontrados.LIST_VUELOS_ENCONTRADOS).values().hasSizeGreaterThan(0);
     }
 
-
+    @Dado("{actor} esta en {string} y desea conseguir un vuelo en {string}")
+    public void vueloOrigen(Actor actor, String origen, String tipoclaseVuelo) {
+        actor.attemptsTo(
+                SeleccionarOrigenVuelos.para(origen),
+                SeleccionarVueloClase.en(tipoclaseVuelo)
+        );
+    }
+    @Cuando("desee viajar a {string} por {int} dias")
+    public void viajeDestino(String destino, int diasViaje) {
+        OnStage.theActorInTheSpotlight().attemptsTo(
+                SeleccionarDestinoVuelos.destinoYDias(destino, diasViaje)
+        );
+    }
+    @Entonces("debe obtener alguna opcion de viaje en primera clase")
+    public void opcionViajeEnClaseEconomica() {
+        Ensure.that(VuelosEncontrados.LIST_VUELOS_ENCONTRADOS).values().hasSizeGreaterThan(0);
+    }
 }

@@ -1,9 +1,7 @@
 package com.travelocity.stepdefinitions;
 
-
-
 import com.travelocity.tasks.SeleccionarDestinoVueloSencillo;
-import com.travelocity.task.SeleccionarOrigenVueloSencillo;
+import com.travelocity.tasks.SeleccionarOrigenVueloSencillo;
 import com.travelocity.userinterfaces.VuelosEncontrados;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
