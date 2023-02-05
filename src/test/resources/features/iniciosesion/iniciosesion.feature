@@ -2,7 +2,7 @@
 
 Característica: Inicio de sesion
   yo como usuaria de la pagina
-  quiero ingresar siempre que necesite
+  quiero iniciar sesion siempre que necesite
   programar un viaje
 
   Escenario: Inicio de sesion en pagina web
@@ -14,4 +14,4 @@ Característica: Inicio de sesion
  Escenario: Cerrar sesion en pagina web
    Dado "Laura" esta logueada en la pagina travelocity
    Cuando cierra sesion
-   Entonces deberia ver la sesion cerrada
+   Entonces debera ver la sesion cerrada

@@ -21,7 +21,7 @@ public class VuelosRedondosStepDefinitions {
                 SeleccionarOrigenVuelos.para(origen)
         );
     }
-    @Cuando("quiera viajar a {string} por {int} dias")
+    @Cuando("quiera viajar a {string} por {int} dias desde la fecha actual")
     public void viajeDestinoConDias(String destino, Integer cantidadDias) {
         OnStage.theActorInTheSpotlight().attemptsTo(
                 SeleccionarDestinoVuelos.destinoYDias(destino, cantidadDias)
@@ -40,7 +40,7 @@ public class VuelosRedondosStepDefinitions {
                 SeleccionarVueloClase.en(tipoclaseVuelo)
         );
     }
-    @Cuando("desee viajar a {string} por {int} dias")
+    @Cuando("desee viajar a {string} por {int} dias desde la fecha actual")
     public void viajeDestino(String destino, int diasViaje) {
         OnStage.theActorInTheSpotlight().attemptsTo(
                 SeleccionarDestinoVuelos.destinoYDias(destino, diasViaje)
