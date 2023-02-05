@@ -5,9 +5,8 @@ Característica: Hospedaje
   para facilitar mi hospedaje en los lugares donde vaya
 
   Escenario: hospedaje en Honolulu con opciones por defecto
-    Dado "Laura" esta en honolulu
-    Y quiere realizar una reserva en un hotel
-    Cuando realice el proceso de reserva por 8 dias para 2 Adultos
+    Dado "Laura" esta en "Honolulu" y quiere realizar una reserva en un hotel
+    Cuando realice el proceso de reserva por 8 dias para 4 Adultos
     Entonces debe visualizar por lo menos una opcion de hotel
 
 @manual

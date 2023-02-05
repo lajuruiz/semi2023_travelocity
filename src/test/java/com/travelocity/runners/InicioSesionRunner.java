@@ -10,6 +10,5 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/iniciosesion/iniciosesion.feature",
         glue = {"com.travelocity.stepdefinitions"}
 )
-
 public class InicioSesionRunner {
 }

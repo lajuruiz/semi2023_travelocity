@@ -6,12 +6,12 @@ Característica: Vuelos redondos
 
   Escenario: vuelo redondo con opciones por defecto
     Dado Laura esta en "Medellín"
-    Cuando quiera viajar a "Cancún" por 15 dias desde la fecha actual
+    Cuando quiera viajar a "Cancún" por 8 dias desde la fecha actual
     Entonces debe obtener alguna opcion de vuelo
 
   Escenario: vuelo redondo en primera clase
     Dado "Laura" esta en "Bogota" y desea conseguir un vuelo en "Primera clase"
-    Cuando desee viajar a "Canada" por 20 dias desde la fecha actual
+    Cuando desee viajar a "Canada" por 8 dias desde la fecha actual
     Entonces debe obtener alguna opcion de viaje en primera clase
 
   Escenario: vuelo redondo para 3 personas con opcion de primera clase

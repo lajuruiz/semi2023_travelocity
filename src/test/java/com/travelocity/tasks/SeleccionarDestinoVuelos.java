@@ -25,10 +25,10 @@ public class SeleccionarDestinoVuelos implements Task {
         actor.attemptsTo(
             Click.on(DetalleVuelos.BUT_DESTINO),
             Enter.theValue(this.destino).into(DetalleVuelos.INPUT_DESTINO).thenHit(Keys.ENTER),
-            Click.on(DetalleVuelos.SELECT_DATE_REGRESO),
-            Click.on(DetalleVuelos.DATE_REGRESO),
-            Click.on(DetalleVuelos.BUT_LISTO),
-            Click.on(DetalleVuelos.BUT_BUSCAR)
+                Click.on(DetalleVuelos.SELECT_DATE_REGRESO),
+                Click.on(DetalleVuelos.DATE_REGRESO),
+                Click.on(DetalleVuelos.BUT_LISTO),
+                Click.on(DetalleVuelos.BUT_BUSCAR)
         );
     }
 

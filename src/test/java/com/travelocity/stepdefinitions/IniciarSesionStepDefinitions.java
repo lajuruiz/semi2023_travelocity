@@ -22,7 +22,7 @@ public class IniciarSesionStepDefinitions {
     @Cuando("inicia sesion con {string} y {string}")
     public void quiera_iniciar_sesion(String correoElectronico, String contrasena) {
         theActorInTheSpotlight().attemptsTo(
-                SeleccionarInicioSesion.iniciarSesion("laurajulianaru@gmail.com",  "%Nai2456823176")
+                SeleccionarInicioSesion.iniciarSesion("laura@correo.com",  "xxxxxx565451")
         );
     }
     @Entonces("{actor} debera iniciar sesion correctamente")

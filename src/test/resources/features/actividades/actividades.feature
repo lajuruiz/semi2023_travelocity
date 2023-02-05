@@ -7,6 +7,6 @@ Característica: Actividades
 
   Escenario: encontrar actividades en cualquier destino
   Dado "Laura" esta buscando actividades en "Mexico"
-  Cuando este alli por 11 dias
+  Cuando este alli por 8 dias
   Entonces espera obtener al menos una actividad
 
